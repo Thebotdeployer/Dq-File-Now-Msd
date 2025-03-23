@@ -6,6 +6,9 @@ from info import DATABASE_NAME, DATABASE_URI, IMDB, IMDB_TEMPLATE, MELCOW_NEW_US
 class Database:
     
     def __init__(self, database_name):
+        print(f"Primary DB URI: {DATABASE_URI}")
+        print(f"Secondary DB URI: {SECONDDB_URI}")
+
         #primary db 
         self._client = motor.motor_asyncio.AsyncIOMotorClient(DATABASE_URI)
         self.db = self._client[database_name]
