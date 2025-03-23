@@ -1,11 +1,11 @@
 pyrogram
 tgcrypto
-pymongo[srv]==3.12.3
-motor==2.5.1
+pymongo[srv]  # (Remove version restriction for latest updates)
+motor  # (Latest compatible version)
 marshmallow==3.14.1
 umongo==3.0.1
 requests
-bs4
+beautifulsoup4  # (Replace `bs4` with correct package name)
 git+https://github.com/Joelkb/cinemagoer
 datetime
 pytz
